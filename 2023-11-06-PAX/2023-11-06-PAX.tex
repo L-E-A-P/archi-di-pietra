@@ -1,0 +1,77 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[tikz]{standalone}
+
+\usetikzlibrary{decorations.pathreplacing,calligraphy}
+
+\usepackage{iwona}
+\usepackage[T1]{fontenc}
+
+\linespread{1}
+
+\usepackage{fontspec,
+			xltxtra,
+			xunicode,
+			unicode-math
+			}
+
+\setromanfont[
+	Mapping=tex-text
+]{Datalegreya}
+
+% PANTONE SOLID UNCOATED
+\definecolor{PinkU}{RGB}{209,66,141}
+\definecolor{YellowU}{RGB}{255,232,0}
+\definecolor{3165U}{RGB}{47,92,102}
+\definecolor{d0a399}{HTML}{d0a399}
+
+%-------------------------------------------------------------------------------
+%------------------------------------------------------------ BEGIN DOCUMENT ---
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\begin{tikzpicture}[scale=1.1]  
+    \draw[fill=3165U] (0,0) rectangle (30,30);
+
+	\node[
+	  anchor=west,
+	  baseline,
+	  align=left,
+	  font=\fontsize{100}{70}\selectfont
+	] at (1.5,25) [color=d0a399,fill=none] {
+
+// ARCHI DI PIETRA\\
+// primo respiro\\
+};    
+    
+	\node[
+	  anchor=west,
+	  baseline,
+	  align=left,
+	  font=\fontsize{51}{40}\selectfont
+	] at (1.5,17) [color=d0a399,fill=none] {
+
+an index of metals = 6 + 11 + 2023 : @(16)\\
+~~with (\\
+~~~~pasquale = citera;\\
+~~~~fausto = romitelli;\\
+);\\[1cm]
+process = an index of metals @(leap);
+};
+
+	\node[
+	  anchor=west,
+	  baseline,
+	  align=left,
+	  font=\fontsize{51}{40}\selectfont
+	] at (1.5,4) [color=d0a399,fill=none] {
+
+// ARCHI DI PIETRA\\
+// APPRODI ALLA LETTERATURA MUSICALE\\
+// LEAP\\
+// VIA LUIGI GAETANO MARINI 12 ROMA
+};            
+\end{tikzpicture}
+
+\end{document}
