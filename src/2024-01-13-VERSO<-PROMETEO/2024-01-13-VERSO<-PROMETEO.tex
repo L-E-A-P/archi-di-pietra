@@ -1,0 +1,75 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[tikz]{standalone}
+
+\usetikzlibrary{decorations.pathreplacing,calligraphy}
+
+\usepackage{iwona}
+\usepackage[T1]{fontenc}
+
+\linespread{1}
+
+\usepackage{fontspec,
+			xltxtra,
+			xunicode,
+			unicode-math
+			}
+
+\setromanfont[
+	Mapping=tex-text
+]{Datalegreya}
+
+% PANTONE SOLID UNCOATED
+\definecolor{Viola}{HTML}{7654AA}
+\definecolor{Verde}{HTML}{88AA54}
+
+%-------------------------------------------------------------------------------
+%------------------------------------------------------------ BEGIN DOCUMENT ---
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\begin{tikzpicture}[scale=1.1]  
+    \draw[fill=Verde] (0,0) rectangle (30,30);
+
+	\node[
+	  anchor=west,
+	  baseline,
+	  align=left,
+	  font=\fontsize{100}{70}\selectfont
+	] at (1.5,25) [color=Viola,fill=none] {
+
+// ARCHI DI PIETRA\\
+// secondo respiro\\
+};    
+    
+	\node[
+	  anchor=west,
+	  baseline,
+	  align=left,
+	  font=\fontsize{51}{40}\selectfont
+	] at (1.5,17) [color=Viola,fill=none] {
+
+verso $\leftarrow$ prometeo = 13 + 1 + 2024 : @(17)\\
+~~with (\\
+~~~~giuseppe = silvi;\\
+~~~~luigi = nono;\\
+);\\[1cm]
+process = verso $\leftarrow$ prometeo @(leap);
+};
+
+	\node[
+	  anchor=west,
+	  baseline,
+	  align=left,
+	  font=\fontsize{51}{40}\selectfont
+	] at (1.5,4) [color=Viola,fill=none] {
+
+// ARCHI DI PIETRA\\
+// APPRODI ALLA LETTERATURA MUSICALE\\
+// LEAP\\
+// VIA LUIGI GAETANO MARINI 12 ROMA
+};            
+\end{tikzpicture}
+
+\end{document}
